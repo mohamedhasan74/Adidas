@@ -1,0 +1,19 @@
+section.header {
+    background-image: url("../images/max-letek-SvfBv5FLrHg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    section.header {
+        display: none;
+    }
+
+    .sectionsContentTwo {
+        margin-top: 50px;
+    }
+}
+
+section.header h1 {
+    max-width: 400px;
+}

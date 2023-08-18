@@ -1,0 +1,226 @@
+:root {
+    --mainColor: #10cab7;
+    --primaryColor: #0aa595;
+}
+
+.py-7 {
+    padding: 80px 0;
+}
+
+.btnTop {
+    position: fixed;
+    border: 1px solid #000;
+    width: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#ProductBtnNext {
+    right: 0;
+}
+
+.btnTop:hover {
+    background-color: #000;
+}
+
+.btnTop:hover i {
+    color: #fff;
+}
+
+.btnTop i {
+    font-size: 16px;
+    color: var(--mainColor);
+}
+
+/* NavBar */
+#CartItem,
+.btnView {
+    background-color: var(--mainColor);
+}
+
+.btnAdd {
+    background-color: #000303;
+}
+
+.navbar-brand img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link::before,
+.Section-Product-List li:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--mainColor);
+    transition: 0.5s;
+}
+
+.nav-link:hover::before,
+.Section-Product-List li:hover::before {
+    width: 100%;
+}
+
+.nav-item:hover .nav-link,
+.Section-Product-List li:hover {
+    color: var(--mainColor) !important;
+}
+
+/* Header */
+header {
+    background-color: #f7f7f7;
+}
+
+header .container {
+    background-image: url("../images/pngegg.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: 40%;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        background-image: none;
+    }
+
+    .Header-Content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .Header-Content p {
+        min-width: 100%;
+    }
+}
+
+header .container:hover {
+    background-size: 45%;
+}
+
+.Header-Content h1,
+.Header-Content a {
+    color: var(--mainColor);
+
+}
+
+.Header-Content p {
+    max-width: 400px;
+}
+
+.Header-Content a {
+    transition: 0.3s;
+}
+
+.Header-Content a:hover {
+    color: var(--primaryColor);
+}
+
+/* Product */
+.Section-Product-Header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Section-Product-Header p {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ebeced;
+}
+
+.Section-Product-Header span {
+    font-size: 20px;
+    position: absolute;
+    padding-top: 20px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .Section-Product-Header p {
+        font-size: 60px;
+    }
+
+    .Section-Product-Header span {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .Section-Product-Header p {
+        font-size: 35px;
+    }
+
+    .Section-Product-Header span {
+        font-size: 10px;
+    }
+
+}
+
+.Section-Product-List li {
+    color: #333;
+    position: relative;
+    padding-bottom: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.Item .Item-img-content img {
+    transition: 0.5s;
+}
+
+.Item .Item-img-content:hover img {
+    scale: 1.2;
+}
+
+
+/* footer */
+footer p:first-child {
+    font-weight: bold;
+}
+
+footer p:not(:first-child) {
+    color: #b6abab;
+    cursor: pointer;
+}
+
+.iconsContainer>div {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.iconsContainer>div:hover {
+    border-color: var(--mainColor);
+}
+
+.iconsContainer>div:hover i {
+    color: var(--mainColor);
+}
+
+.iconsContainer>div i {
+    font-size: 10px;
+    transition: 0.5s;
+}

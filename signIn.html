@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/signIn.css">
+    <link rel="icon" type="image/x-icon" href="./images/adidas.png">
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#OurCollection">Our Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="userProductCart.html"><i
+                                class="fas fa-cart-shopping"></i>
+                            <span id="CartItem"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                                0
+                            </span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signIn.html" id="signInUserName">Sign In</a>
+                    </li>
+                    <li class="nav-item" id="SignOut" style="display: none;">
+                        <a class="nav-link" href="signIn.html" id="signOut">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- content -->
+    <div class="container py-7">
+        <h1 style="color: #10cab7;">Log In Now :</h1>
+        <form action="">
+            <input class="form-control" type="email" placeholder="Enter Your Email" id="emailInput"
+                title="mohamedhasan@gmail.com">
+            <p id="emailError" class="error">*Email Must Be Start At Least 3 Character The @ (gmail, yahoo)</p>
+            <input class="form-control" type="password" placeholder="Enter Your Password" id="passwordInput"
+                title="mohamed7422">
+            <p id="passwordError" class="error">*password Must Be 8 (Char, digit) at least</p>
+            <div class="buttonsContainer">
+                <button type="submit" id="subBtn">Log In</button>
+                <button id="RegBtn">Register</button>
+            </div>
+            <p id="registerError" class="error">*You Must Register First</p>
+        </form>
+    </div>
+    <!-- Footer  -->
+    <footer class="bg-black text-white p-4 text-center">
+        <div class="container">
+            <div class="row border-bottom">
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <p>Info</p>
+                        <p>Weeply Themes</p>
+                        <p>Pre-Sale FaQs</p>
+                        <p>Submit Cart Items</p>
+                        <p>Services</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <p>Products</p>
+                        <p>Shoes</p>
+                        <p>Clothing</p>
+                        <p>Accessories</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <p>Category</p>
+                        <p>Male</p>
+                        <p>Female</p>
+                        <p>Shoes</p>
+                        <p>Apparel</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <p>Support</p>
+                        <p>Help</p>
+                        <p>Shipping</p>
+                        <p>Returns</p>
+                        <p>AdiClub & Newsletter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="iconsContainer d-flex align-items-center justify-content-center py-4 gap-4">
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+                <div>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/signIn.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

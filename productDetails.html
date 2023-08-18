@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="icon" type="image/x-icon" href="./images/adidas.png">
+
+</head>
+
+<body>
+    <!-- Fixed Button -->
+    <div class="btnTop">
+        <a href="#" class="text-decoration-none"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="ImgLogo">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html" id="Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#OurCollection" id="OurCollection">Our Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="userProductCart.html"><i
+                                class="fas fa-cart-shopping"></i>
+                            <span id="CartItem"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                                0
+                            </span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signIn.html" id="signInUserName">Sign In</a>
+                    </li>
+                    <li class="nav-item" id="SignOut" style="display: none;">
+                        <a class="nav-link" href="signIn.html" id="signOut">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- content -->
+    <section class="ProductDetails py-7">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="position-relative d-flex align-items-center">
+                        <img class="w-100" src="" alt="" id="ProductImggSlider">
+                        <i class="btn position-absolute" style="color: white; font-size: 40px;"
+                            id="ProductBtnPrev">&lt;</i>
+                        <i class="btn position-absolute" style="color: white; font-size: 40px;"
+                            id="ProductBtnNext">&gt;</i>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <h2 id="ProducName">ProducName</h2>
+                        <p id="ProductOldPrice"><b>ProductOldPrice:</b></p>
+                        <p id="ProductNewPrice"><b>ProductNewPrice:</b></p>
+                        <h3>About The Product :</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam laudantium adipisci
+                            delectus quod molestias ex ea consequatur ipsum, sed veniam nesciunt assumenda saepe
+                            mollitia odit unde quasi earum, porro illo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius.
+                            Dignissimos, labore suscipit. Unde</p>
+                        <div id="ProductColorContainer" class="d-flex align-items-center gap-3 py-2">
+                        </div>
+                        <p id="ProductCategory"><b>Category:</b></p>
+                        <p id="ProductShippingArea"><b>Shipping Area:</b> All The World</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer  -->
+    <footer class="bg-black text-white p-4 text-center">
+        <div class="container">
+            <div class="row border-bottom">
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <p>Info</p>
+                        <p>Weeply Themes</p>
+                        <p>Pre-Sale FaQs</p>
+                        <p>Submit Cart Items</p>
+                        <p>Services</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <p>Products</p>
+                        <p>Shoes</p>
+                        <p>Clothing</p>
+                        <p>Accessories</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <p>Category</p>
+                        <p>Male</p>
+                        <p>Female</p>
+                        <p>Shoes</p>
+                        <p>Apparel</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <p>Support</p>
+                        <p>Help</p>
+                        <p>Shipping</p>
+                        <p>Returns</p>
+                        <p>AdiClub & Newsletter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="iconsContainer d-flex align-items-center justify-content-center py-4 gap-4">
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+                <div>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/productDetails.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

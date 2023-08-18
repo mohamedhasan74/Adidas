@@ -1,0 +1,140 @@
+:root {
+    --mainColor: #10cab7;
+    --primaryColor: #0aa595;
+}
+
+.py-7 {
+    padding: 80px 0;
+}
+
+/* NavBar */
+#CartItem,
+.btnView {
+    background-color: var(--mainColor);
+}
+
+.btnAdd {
+    background-color: #000303;
+}
+
+.navbar-brand img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link::before,
+.Section-Product-List li:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--mainColor);
+    transition: 0.5s;
+}
+
+.nav-link:hover::before,
+.Section-Product-List li:hover::before {
+    width: 100%;
+}
+
+.nav-item:hover .nav-link,
+.Section-Product-List li:hover {
+    color: var(--mainColor) !important;
+}
+
+
+
+
+
+.task2Container {
+    padding: 40px;
+}
+
+form {
+    width: 100%;
+}
+
+form p {
+    display: none;
+    color: red;
+    padding-top: 0;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+form>input {
+    display: block;
+    margin: 20px 0;
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    background-color: #eee;
+}
+
+select {
+    margin: 10px 0;
+}
+
+.genderContainer,
+.sportsConatiner,
+.buttonsContainer {
+    padding: 10px 0;
+}
+
+.buttonsContainer>button {
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: wheat;
+    cursor: pointer;
+}
+
+.buttonsContainer>button:first-child {
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.buttonsContainer>button:last-child {
+    background-color: black;
+    color: white;
+}
+
+/* footer */
+footer p:first-child {
+    font-weight: bold;
+}
+
+footer p:not(:first-child) {
+    color: #b6abab;
+    cursor: pointer;
+}
+
+.iconsContainer>div {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.iconsContainer>div:hover {
+    border-color: var(--mainColor);
+}
+
+.iconsContainer>div:hover i {
+    color: var(--mainColor);
+}
+
+.iconsContainer>div i {
+    font-size: 10px;
+    transition: 0.5s;
+}
